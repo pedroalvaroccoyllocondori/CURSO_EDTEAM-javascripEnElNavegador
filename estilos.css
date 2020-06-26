@@ -2,9 +2,9 @@
 
 body{
     margin: 0;
-    display: flex;
+    display: inline;
     min-height: 100vh;
-    padding-bottom: 1000em;
+    padding-bottom: 100em;
 }
 
 
@@ -18,4 +18,8 @@ input{
 
 [type='checkbox']{
     display: inline-block;
+}
+.video{
+    width: 640px;
+    height: 360px;
 }

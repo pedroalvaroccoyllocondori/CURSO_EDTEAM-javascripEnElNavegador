@@ -1,12 +1,27 @@
 
-addEventListener('scroll',e=>{
+
+const video = document.getElementById('video'),
+    play  = document.getElementById('play'),
+    pause= document.getElementById('pause')
+
+
+play.addEventListener('click',()=>{
+    video.play()
+})
+pause.addEventListener('click',()=>{
+    video.pause()
+})
+
+
+
+/* addEventListener('scroll',e=>{
     console.log(scrollX,scrollY)
 })
 addEventListener('resize',e=>{
     console.log(innerWidth,innerHeight)
     console.log(outerWidth,outerHeight)
 })
-
+ */
 
 
 /* addEventListener('DOMContentLoaded',()=>{
