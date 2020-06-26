@@ -1,9 +1,15 @@
 
+addEventListener('scroll',e=>{
+    console.log(scrollX,scrollY)
+})
+addEventListener('resize',e=>{
+    console.log(innerWidth,innerHeight)
+    console.log(outerWidth,outerHeight)
+})
 
 
 
-
-addEventListener('DOMContentLoaded',()=>{
+/* addEventListener('DOMContentLoaded',()=>{
     const formulario=document.getElementById('formu')
     const recordar=document.getElementById('recordar')
     formulario.addEventListener('submit',()=>{
@@ -21,5 +27,5 @@ addEventListener('DOMContentLoaded',()=>{
     })
 })
 
-
+ */
 
