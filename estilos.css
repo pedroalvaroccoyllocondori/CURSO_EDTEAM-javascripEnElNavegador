@@ -23,7 +23,19 @@ input{
     width: 640px;
     height: 360px;
 }
-div{
-    padding: 2em;
-    border: 1px solid #999;
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
 }
+.img img{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
