@@ -1,17 +1,20 @@
-/* document.querySelectorAll('div').forEach(el =>{
-    el.addEventListener('click',e=>{
-        console.log(`click en ${e.target.id}`)
-        e.stopPropagation()
-    })
-}) */
+const padres= document.getElementById('padres')
 
-const galeria=document.getElementById('galeria')
+const nieto= document.getElementById('nieto2')
 
-galeria.addEventListener('click',e=>{
-    const objetivo=e.target,
-          imagenes= Array.from(galeria.querySelectorAll('img'))
-    let numero=imagenes.indexOf(objetivo)
-    console.log(`imagem ${numero+1}`)
-})
+///hijos
+console.log(padres.querySelectorAll('div'))
+console.log(padres.childNodes)
+console.log(padres.firstElementChild)
+console.log(padres.lastElementChild)
+console.log(padres.lastChild)
+console.log(padres.hasChildNodes())
+//hermanos
+
+console.log(nieto.nextElementSibling)
+console.log(nieto.previousElementSibling)
+
+//padres
+console.log(nieto.parentElement.parentElement)//devuelve el elemto hijo
 
 
