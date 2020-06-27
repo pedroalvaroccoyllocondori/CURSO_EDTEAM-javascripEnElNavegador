@@ -1,20 +1,16 @@
-const padres= document.getElementById('padres')
 
-const nieto= document.getElementById('nieto2')
+const padres = document.getElementById('padres')
+const hijos=Array.from(padres.children)
+const hijospapas=hijos.filter(hijos=>hijos.children.length>0)[0]
 
-///hijos
-console.log(padres.querySelectorAll('div'))
-console.log(padres.childNodes)
-console.log(padres.firstElementChild)
-console.log(padres.lastElementChild)
-console.log(padres.lastChild)
-console.log(padres.hasChildNodes())
-//hermanos
+const nietos=Array.from(hijospapas.children)
+const nieto3=hijos.filter(hijos=>hijos.textContent.trim()==='nieto3')[0]
 
-console.log(nieto.nextElementSibling)
-console.log(nieto.previousElementSibling)
 
-//padres
-console.log(nieto.parentElement.parentElement)//devuelve el elemto hijo
 
+const nuevoelemento= document.createElement('h2')
+nuevoelemento.textContent='soy el elemto a agregar'
+
+
+hijospapas.insertBefore(nuevoelemento,nieto3)
 
