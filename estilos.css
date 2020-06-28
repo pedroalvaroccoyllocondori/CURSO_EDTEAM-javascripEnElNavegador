@@ -1,7 +1,6 @@
-#insertar{
-    background:  blue;
-    height: 100px;
+div{
+    border: 1px solid blue;
     text-align: center;
-    margin: 1em 0  ;
-
+    margin: .5em;
 }
+
