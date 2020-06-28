@@ -1,16 +1,24 @@
+const post = document.getElementById('post')
 
-const padres = document.getElementById('padres')
-const hijos=Array.from(padres.children)
-const hijospapas=hijos.filter(hijos=>hijos.children.length>0)[0]
+const postparrafo= post.querySelectorAll('p')
 
-const nietos=Array.from(hijospapas.children)
-const nieto3=hijos.filter(hijos=>hijos.textContent.trim()==='nieto3')[0]
+const anuncio = document.createElement('div')
 
 
+anuncio.id='insertar'
+anuncio.textContent='publicidad'
 
-const nuevoelemento= document.createElement('h2')
-nuevoelemento.textContent='soy el elemto a agregar'
 
+const  obtennermitadhijos=elemento=>{
+    const hijos=elemento.children
+    const longitud=hijos.length
+    const mitad = Math.floor(longitud/2)
 
-hijospapas.insertBefore(nuevoelemento,nieto3)
+    return hijos[mitad]
+}
+// obtener la mitad de los elemtos
+console.log(obtennermitadhijos(post))
 
+const hijomedio=obtennermitadhijos(post)
+
+post.insertBefore(anuncio,hijomedio)
