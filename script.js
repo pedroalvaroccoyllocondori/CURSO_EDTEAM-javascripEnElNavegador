@@ -7,5 +7,13 @@ elemento.id='nuevo'
 elemento.textContent='soy el nuevo elemto'
 
 
-padre.replaceChild(elemento,padre.children[0])// como primer parametro se pone el elementonuevo 
-// y como segundo parametro el elemto a remplazar (sacar)
+
+padre.before(elemento)// hermano anterior
+padre.after(elemento)//hermano posterior
+
+padre.prepend(elemento)// primer hijo
+padre.append(elemento)//ultimo  hijo
+
+
+
+padre.children[0].replaceWith(elemento)
