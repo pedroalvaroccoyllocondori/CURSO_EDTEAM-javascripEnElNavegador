@@ -6,14 +6,18 @@ const elemento = document.createElement('div')
 elemento.id='nuevo'
 elemento.textContent='soy el nuevo elemto'
 
+//padre.insertAdjacentElement('beforebegin',elemento)//insercion hermananterior
+//padre.insertAdjacentElement('afterend',elemento)// insercion hermana posterior
+
+//padre.insertAdjacentElement('afterbegin',elemento)/// insercion hijo anterior
+
+//padre.insertAdjacentElement('beforeend',elemento)/// insercion hijo anterior
+
+//padre.insertAdjacentText('afterbegin','hola mundo')// insercion de texto
+
+///estos meetodos insert tex funciona con texto  tambn
+
+///************************* */metodo para insertar heml
+padre.insertAdjacentHTML('beforebegin',`<h1>soy el titulo</h1>`)
 
 
-padre.before(elemento)// hermano anterior
-padre.after(elemento)//hermano posterior
-
-padre.prepend(elemento)// primer hijo
-padre.append(elemento)//ultimo  hijo
-
-
-
-padre.children[0].replaceWith(elemento)
