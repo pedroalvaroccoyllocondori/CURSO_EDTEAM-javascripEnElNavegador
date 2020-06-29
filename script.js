@@ -1,23 +1,18 @@
-const post = document.getElementById('post')
+const profesores=['alvaro','jose','maria','ramon']
+const listaprofesores= document.createElement('ul')
+const contenedorprofe=document.getElementById('tabla')
 
-const padre = document.getElementById('padre')
+const listaprofefragment= document.createDocumentFragment('')
 
-const elemento = document.createElement('div')
-elemento.id='nuevo'
-elemento.textContent='soy el nuevo elemto'
+contenedorprofe.appendChild(listaprofesores)
 
-//padre.insertAdjacentElement('beforebegin',elemento)//insercion hermananterior
-//padre.insertAdjacentElement('afterend',elemento)// insercion hermana posterior
+for(let profesor of profesores){
+    const li = document.createElement('li')
+    //listaprofesores.appendChild(li)
+    listaprofefragment.appendChild(li)
+    li.textContent=profesor
 
-//padre.insertAdjacentElement('afterbegin',elemento)/// insercion hijo anterior
+}
 
-//padre.insertAdjacentElement('beforeend',elemento)/// insercion hijo anterior
-
-//padre.insertAdjacentText('afterbegin','hola mundo')// insercion de texto
-
-///estos meetodos insert tex funciona con texto  tambn
-
-///************************* */metodo para insertar heml
-padre.insertAdjacentHTML('beforebegin',`<h1>soy el titulo</h1>`)
-
+listaprofesores.appendChild(listaprofefragment)
 
