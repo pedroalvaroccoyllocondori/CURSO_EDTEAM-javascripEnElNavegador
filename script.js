@@ -1,18 +1,7 @@
-const profesores=['alvaro','jose','maria','ramon']
-const listaprofesores= document.createElement('ul')
-const contenedorprofe=document.getElementById('tabla')
+const  plantilla= document.getElementById('plantilla')
 
-const listaprofefragment= document.createDocumentFragment('')
+const miplatillanueva= plantilla.content.cloneNode(true)
+miplatillanueva.querySelector('h2').textContent='edteam'
+miplatillanueva.querySelector('p').textContent='tu futuro te esta esperando'
 
-contenedorprofe.appendChild(listaprofesores)
-
-for(let profesor of profesores){
-    const li = document.createElement('li')
-    //listaprofesores.appendChild(li)
-    listaprofefragment.appendChild(li)
-    li.textContent=profesor
-
-}
-
-listaprofesores.appendChild(listaprofefragment)
-
+document.getElementById('contenido').appendChild(miplatillanueva)
