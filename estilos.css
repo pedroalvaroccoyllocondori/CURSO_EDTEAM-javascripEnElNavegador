@@ -1,9 +1,4 @@
-body{
-    font-size: 2em;
-}
-h1{
-    font-size: 2em;
-}
-p{
-    font-size: .5em;
+label{
+    display: block;
+    margin-bottom: .5rem;
 }
