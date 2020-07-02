@@ -2,3 +2,6 @@ label{
     display: block;
     margin-bottom: .5rem;
 }
+body{
+    font-size: 6em;
+}
